@@ -10,41 +10,38 @@
 
 <body>
 
-<link rel="stylesheet" href="calculatorstylesheet.css"> <!--Does anything else need to be added here?-->
-<script src="./calculatorstylesheet.js" type ="text/javascript"></script>
+<link rel="stylesheet" href="calculatorstylesheet.css"> 
+<script src="calculatorjavascript.js"></script>
 
-    <section class= "outside-box">
+    <div class= "calculator">
 
-        <div class= "calculator-face">
-       
-
-        <div class="display-box">0</div>
+        <div class ="input-display" id="input-display">0</div>
 
     <div class="buttons">
-
-        <div class="AC-button">AC</div>
-        <div class="plus-minus-button">+/-</div>
-        <div class="percentage-button">%</div>
-        <div class="division-button">÷</div>
-        <div class="seven-button">7</div>
-        <div class="eight-button">8</div>
-        <div class="nine-button">9</div>
-        <div class="times-button">×</div>
-        <div class="four-button">4</div>
-        <div class="five-button">5</div>
-        <div class="six-button">6</div>
-        <div class="minus-button">-</div>
-        <div class="one-button">1</div>
-        <div class="two-button">2</div>
-        <div class="three-button">3</div>
-        <div class="plus-button">+</div>
-        <div class="zero-button">0</div>
-        <div class="period-button">.</div>
-        <div class="equals-button">=</div>
+        <button class="AC-button" onclick="buttonPressed()">AC</button>
+        <button class="delete-button" onclick="buttonPressed()">Del</button>
+        <button class="percentage-button" onclick="buttonPressed()">%</button>
+        <button class="division-button" onclick="buttonPressed('/')">÷</button>
+        <button class="seven-button" onclick="buttonPressed(7)">7</button>
+        <button class="eight-button" onclick="buttonPressed(8)">8</button>
+        <button class="nine-button" onclick="buttonPressed(9)">9</button>
+        <button class="multiply-button" onclick="('x')">x</button>
+        <button class="four-button" onclick="buttonPressed(4)">4</button>
+        <button class="five-button" onclick="buttonPressed(5)">5</button>
+        <button class="six-button" onclick="buttonPressed(6)">6</button>
+        <button class="subtract-button" onclick="buttonPressed('-')">-</button>
+        <button class="one-button" onclick="buttonPressed(1)">1</button>
+        <button class="two-button" onclick="buttonPressed(2)">2</button>
+        <button class="three-button" onclick="buttonPressed(3)">3</button>
+        <button class="add-button" onclick="buttonPressed('+')">+</button>
+        <button class="zero-button" onclick="buttonPressed(0)">0</button>
+        <button class="decimal-point-button" onclick="buttonPressed('.')">.</button>
+        <button class="equals-button" onclick="buttonPressed('=')">=</button>
 
 </div>
+
 </div>
-</section>
 </body>
 
 </html>
+

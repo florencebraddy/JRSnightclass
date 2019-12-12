@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="a">a</div>
+        <div class="b">
+        <div class="ba">ba</div>
+        <div class="bb">bb</div>
+        <div class="bc">bc</div>
+        <div class="bd">bd</div>
+</div>
+        <div class="c">c</div>
+        <div class="d">d</div>
+    </div>
+
+    <style>
+        .wrap {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 400px;
+        }
+
+        .a {
+            background-color: purple;
+            grid-column: 1/2;
+            grid-row: 1;
+        }
+
+        .b {
+            background-color: orange;
+            grid-column: 2/3;
+            grid-row: 1;
+            display: grid;
+        }
+        .ba {
+            background-color: red;
+        }
+
+        .bb {
+            background-color: pink;
+        }
+
+        .bc {
+            background-color:powderblue;
+        }
+
+        .bd {
+            background-color:brown;
+        }
+
+
+        .c {
+            background-color: blue;
+            grid-row:2/3;
+            grid-column:1/2;
+        }
+
+        .d {
+            background-color: green;
+            grid-row:2/3;
+            grid-column: 2/3;
+        }
+
+    </style>
+</body>
+
+</html>

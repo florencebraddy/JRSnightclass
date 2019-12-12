@@ -1,0 +1,240 @@
+
+
+.calculator {
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px 80px 80px 80px;
+    padding: 50px;
+}
+
+
+.input-display {
+    display: grid;
+    grid-column:3/4;
+    grid-row:1/2;
+    font-family: 'Courier New', Courier, monospace;    
+    font-weight: bold;
+    font-size: 30px;
+    text-align: right;
+    border: solid;
+}
+
+button:focus { outline: none; }
+
+.buttons {
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px;
+    font-family: 'Courier New', Courier, monospace;    
+    font-weight: bold;
+    font-size: 25px;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    text-align: left;
+}
+
+.AC-button {
+background-color:lightgray;
+color: black;
+grid-column: 1/2;
+grid-row: 2/3;
+-moz-border-radius: 50px;
+-webkit-border-radius: 50px;
+border-radius: 50px;
+text-align: center;
+font-size: 15px; 
+}
+
+.delete-button {
+    background-color:lightgray;
+    color: black;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;   
+    
+}
+
+.percentage-button {
+    background-color: lightgray;
+    color: black;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px; 
+}
+
+.division-button {
+    background-color:orange;
+    color: white;
+    grid-column: 4/5;
+    grid-row: 2/3;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px; 
+}
+
+.multiply-button {
+    background-color:orange;
+    color: white;
+    grid-column: 4/5;
+    grid-row: 3/4;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.subtract-button {
+    background-color:orange;
+    color: white;
+    grid-column: 4/5;
+    grid-row: 4/5;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.add-button {
+    background-color:orange;
+    color: white;
+    grid-column: 4/5;
+    grid-row: 5/6;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.equals-button {
+    background-color:orange;
+    color: white;
+    grid-column: 3/5;
+    grid-row: 6/7;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.zero-button {
+    color: black;
+    grid-column: 1/2;
+    grid-row: 6/7;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.one-button {
+    color: black;
+    grid-column: 1/2;
+    grid-row: 5/6;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.two-button {
+    color: black;
+    grid-column: 2/3;
+    grid-row: 5/6;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.three-button {
+    color: black;
+    grid-column: 3/4;
+    grid-row: 5/6;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+.four-button {
+    color: black;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.five-button {
+    color: black;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.six-button {
+    color: black;
+    grid-column: 3/4;
+    grid-row: 4/5;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.seven-button {
+    color: black;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.eight-button {
+    color: black;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.nine-button {
+    color: black;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.decimal-point-button {
+    color: black;
+    grid-column: 2/3;
+    grid-row: 6/7;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
