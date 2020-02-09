@@ -3,73 +3,71 @@
   padding: 0;
   box-sizing: border-box;
 }
-body, html {
+body,
+html {
   height: 100%;
 }
 
-body { 
+body {
   background: url(imagebackground.jpg) center/cover fixed no-repeat;
   max-width: 100%;
   max-height: 100%;
   text-align: center;
 }
 
-.navigation-bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    text-transform: uppercase;
-    margin: 50px;
-  }
+.navigation-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+  margin: 50px;
+}
 
-  .menu-item {
-    padding-right: 20px;
-    color: black;
-    font-size: 30px;
-    font-family: 'Permanent Marker', cursive
-  }
+.menu-item {
+  padding-right: 20px;
+  color: black;
+  font-size: 30px;
+  font-family: "Permanent Marker", cursive;
+}
 
-.page-header{
-    font-family: 'Permanent Marker', cursive;
-    color: darkmagenta;
-    font-size: 50px;
-    text-align: center;
-        overflow: hidden; 
-        border-right: .15em solid black;
-        white-space: nowrap; 
-        margin: 40px;
-        letter-spacing: .15em; 
-        animation: 
-          typing 3.5s steps(40, end),
-          blink-caret .75s step-end infinite;
-      }
-      
+.page-header {
+  font-family: "Permanent Marker", cursive;
+  color: darkmagenta;
+  font-size: 40px;
+  text-align: center;
+  overflow: hidden;
+  border-right: 0.15em solid black;
+  padding: 60px;
+  white-space: nowrap;
+  margin: 40px;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
 .main {
-        text-align: center;
-      }     
+  text-align: center;
+}
 
 .title {
-    font-family: 'Permanent Marker', cursive;
-    text-align: center;
-    color: darkmagenta;
-    padding: 100px;
-    font-size: 50px;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  color: darkmagenta;
+  padding: 100px;
+  font-size: 50px;
 }
 
 .paragraph-one {
-
-  font-family: "courier new", 'Courier New', Courier, monospace;
+  font-family: "courier new", "Courier New", Courier, monospace;
   font-size: 40px;
   color: black;
   text-align: center;
   padding: 40px;
   border: 40px;
-
 }
 
-.quotes{
-  font-family: "courier new", 'Courier New', Courier, monospace;
+.quotes {
+  font-family: "courier new", "Courier New", Courier, monospace;
   font-size: 25px;
   color: black;
   text-align: center;
@@ -77,101 +75,134 @@ body {
   border: 40px;
 }
 
-      @keyframes typing {
-        from { width: 0 }
-        to { width: 100% }
-      }
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 
 .page-one-p1 {
-
-  font-family: "courier new", 'Courier New', Courier, monospace;
+  font-family: "courier new", "Courier New", Courier, monospace;
   font-size: 25px;
   color: black;
   text-align: center;
 }
 
 .page-one-list {
-  font-family: "courier new", 'Courier New', Courier, monospace;
+  font-family: "courier new", "Courier New", Courier, monospace;
   font-size: 25px;
   color: black;
-  padding: 100px;
+  text-align: center;
 }
 
 .title-two {
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
   text-align: center;
   color: darkmagenta;
   font-size: 40px;
 }
 
 .page-one-p2 {
-  font-family: "courier new", 'Courier New', Courier, monospace;
+  font-family: "courier new", "Courier New", Courier, monospace;
   font-size: 25px;
   color: black;
   text-align: center;
-  padding:40px;
+  padding: 40px;
 }
 
 table {
-  font-family: "courier new", 'Courier New', Courier, monospace;
+  font-family: "courier new", "Courier New", Courier, monospace;
   border-collapse: collapse;
   width: 50%;
-  margin-left:auto; 
-  margin-right:auto;  
+  margin-left: auto;
+  margin-right: auto;
   padding: 60px;
 }
 
-td, th {
+td,
+th {
   border: 1px solid #dddddd;
   text-align: center;
   padding: 10px;
   margin: 30px;
 }
 
-
-th{ 
-  background-color:purple;
+th {
+  background-color: purple;
   color: white;
   font-size: 20px;
   font-weight: bold;
 }
 
-.page-two-p1{
-  font-family: "courier new", 'Courier New', Courier, monospace;
+.page-two-p1 {
+  font-family: "courier new", "Courier New", Courier, monospace;
   font-size: 25px;
   color: black;
   text-align: center;
-  padding:40px;
+  padding: 40px;
 }
 
-.question{
-    margin: 80px;
-    padding: 10px;
-    width: 500px;
-    height: 50px;
-    font-size:22px;
-    display:inline-block;
-  }
+#magic-8-ball-section {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 1px dotted black;
+  text-align: center;
+  font-family: "Helvetica Neue", arial;
+  font-weight: 100;
+}
 
-.magic-8-ball{
+#question {
+  background-color: white;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding: 25px 30px;
+  margin: 30px;
+  width: 375px;
+  height: 25px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Didact Gothic";
+}
+
+.magic-8-ball {
   background-color: black;
   border: 1px solid black;
   border-radius: 50%;
-  width: 425px;
-  height: 425px;
+  width: 500px;
+  height: 500px;
   margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
-.dipslay {
+.answer-magic-8 {
   background-color: white;
-  border: white;
+  border: 1px solid #333;
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+  margin: 25% auto;
 }
 
-.answer-magic-8{
-  background-color: white;
-      border: 1px solid white;
-      border-radius: 50%;
-      width: 40%;
-      height: 40%;
-      margin: 30% auto;
-    }
+#number-8 {
+  font-size: 5em;
+  margin: 20% auto;
+  color: rgb(17, 11, 11);
+  padding: auto;
+  font-family: "Didact Gothic";
+}
+
+#show-answer {
+  color: rgb(19, 26, 29);
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-family: "Didact Gothic";
+  font-weight: bold;
+  padding: 50px;
+}

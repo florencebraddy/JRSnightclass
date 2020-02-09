@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Calculator</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <link rel="stylesheet" href="calculatorstylesheet.css" />
+    <script src="calculatorjavascript.js"></script>
 
-<link rel="stylesheet" href="calculatorstylesheet.css"> 
-<script src="calculatorjavascript.js"></script>
+    <div class="calculator">
+      <div class="input-display" id="input-display">0</div>
 
-    <div class= "calculator">
-
-        <div class ="input-display" id="input-display">0</div>
-
-    <div class="buttons">
-        <button class="AC-button" onclick="buttonPressed()">AC</button>
+      <div class="buttons">
+        <button class="AC-button" onclick="buttonPressed(0)">AC</button>
         <button class="delete-button" onclick="buttonPressed()">Del</button>
         <button class="percentage-button" onclick="buttonPressed()">%</button>
         <button class="division-button" onclick="buttonPressed('/')">÷</button>
@@ -35,13 +32,11 @@
         <button class="three-button" onclick="buttonPressed(3)">3</button>
         <button class="add-button" onclick="buttonPressed('+')">+</button>
         <button class="zero-button" onclick="buttonPressed(0)">0</button>
-        <button class="decimal-point-button" onclick="buttonPressed('.')">.</button>
+        <button class="decimal-point-button" onclick="buttonPressed('.')">
+          .
+        </button>
         <button class="equals-button" onclick="buttonPressed('=')">=</button>
-
-</div>
-
-</div>
-</body>
-
+      </div>
+    </div>
+  </body>
 </html>
-
