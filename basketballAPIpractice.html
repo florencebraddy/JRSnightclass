@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Basketball API Practice</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <button
+      onclick="getRequest('https://www.balldontlie.io/api/v1/players','players')"
+    >
+      Baksetball Players
+    </button>
+    <script>
+            function getRequest(url, apiName) {
+              $.getJSON(url, function(response) {
+                parseBasketballJSON(response);
+              }
+            }
+
+              const parseBasketballJSON = json => {
+              json.map(el => {
+      document.getElementById("doc-text").innerHTML += el.players + "<br>"
+      });
+    </script>
+    <div id="doc-text"></div>
+  </body>
+</html>
